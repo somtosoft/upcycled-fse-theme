@@ -1,8 +1,10 @@
 # BlockTheme
 
-BlockTheme is a block-based starter theme built for modern WordPress developers. 
+BlockTheme is a block-based starter theme built for modern WordPress developers.
 
-Built by [@aurooba](https://github.com/aurooba) and [@bacoords](https://github.com/bacoords).
+A fork of [bacords block starter theme](https://github.com/bacoords/block-theme)
+
+Built by [@bacoords](https://github.com/bacoords).
 
 ## Theme Setup
 

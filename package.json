@@ -22,12 +22,18 @@
 		"@wordpress/prettier-config": "^3.12.0",
 		"@wordpress/scripts": "^27.6.0",
 		"glob": "^8.1.0",
-		"remove-files-webpack-plugin": "^1.5.0"
+		"remove-files-webpack-plugin": "^1.5.0",
+		"tailwindcss": "^3.4.15"
 	},
 	"scripts": {
 		"build": "wp-scripts build --config ./bin/webpack.config.js --webpack-src-dir=src/blocks",
 		"create-block": "cd ./src/blocks && npx @wordpress/create-block --namespace=block-theme --no-plugin",
 		"create-block:dynamic": "cd ./src/blocks && npx @wordpress/create-block --namespace=block-theme --no-plugin --variant=dynamic",
 		"start": "wp-scripts start --config ./bin/webpack.config.js --webpack-src-dir=src/blocks"
+	},
+	"dependencies": {
+		"@tailwindcss/forms": "^0.5.9",
+		"@wordpress/icons": "^10.11.0",
+		"tailwind-material-colors": "^3.2.2"
 	}
 }

@@ -2,5 +2,9 @@
 @use "vendors";
 @use "base";
 @use "layout";
+@use "blocks";
 @use "components";
 @use "pages";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

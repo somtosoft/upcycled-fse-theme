@@ -11,33 +11,185 @@
       "duotone": [],
       "palette": [
         {
-          "name": "Background",
-          "slug": "background",
-          "color": "#FEFEFE"
-        },
-        {
-          "name": "Foreground",
-          "slug": "foreground",
-          "color": "#181A1F"
-        },
-        {
-          "name": "Primary",
           "slug": "primary",
-          "color": "#3858e9"
+          "color": "#106682",
+          "name": "Primary"
         },
         {
-          "name": "Secondary",
+          "slug": "onPrimary",
+          "color": "#FFFFFF",
+          "name": "On Primary"
+        },
+        {
+          "slug": "primaryContainer",
+          "color": "#bce9ff",
+          "name": "Primary Container"
+        },
+        {
+          "slug": "primaryContainerFixed",
+          "color": "#bce9ffff",
+          "name": "Primary Container Light"
+        },
+        {
+          "slug": "onPrimaryContainer",
+          "color": "#001f2a",
+          "name": "On Primary Container"
+        },
+        {
+          "slug": "onPrimaryContainerFixed",
+          "color": "#001f2aff",
+          "name": "On Primary Container Fixed"
+        },
+        {
           "slug": "secondary",
-          "color": "#7b90ff"
+          "color": "#8B4A61",
+          "name": "Secondary"
+        },
+        {
+          "slug": "onSecondary",
+          "color": "#FFFFFF",
+          "name": "On Secondary"
+        },
+        {
+          "slug": "secondaryContainer",
+          "color": "#FFD9E3",
+          "name": "Secondary Container"
+        },
+        {
+          "slug": "onSecondaryContainer",
+          "color": "#3A071E",
+          "name": "On Secondary Container"
+        },
+        {
+          "slug": "tertiary",
+          "color": "#5d5b7d",
+          "name": "Tertiary"
+        },
+        {
+          "slug": "onTertiary",
+          "color": "#FFFFFF",
+          "name": "On Tertiary"
+        },
+        {
+          "slug": "tertiaryContainer",
+          "color": "#e3dfff",
+          "name": "Tertiary Container"
+        },
+        {
+          "slug": "onTertiaryContainer",
+          "color": "#191836",
+          "name": "On Tertiary Container"
+        },
+        {
+          "slug": "error",
+          "color": "#ba1a1a",
+          "name": "Error"
+        },
+        {
+          "slug": "onError",
+          "color": "#FFFFFF",
+          "name": "On Error"
+        },
+        {
+          "slug": "errorContainer",
+          "color": "#ffdad6",
+          "name": "Error Container"
+        },
+        {
+          "slug": "onErrorContainer",
+          "color": "#410002",
+          "name": "On Error Container"
+        },
+        {
+          "slug": "background",
+          "color": "#F9FCFE",
+          "name": "Background"
+        },
+        {
+          "slug": "onBackground",
+          "color": "#191C1E",
+          "name": "On Background"
+        },
+        {
+          "slug": "surface",
+          "color": "#f6fafd",
+          "name": "Surface"
+        },
+        {
+          "slug": "surfaceFixed",
+          "color": "#f6fafdff",
+          "name": "Surface Fixed"
+        },
+        {
+          "slug": "onSurface",
+          "color": "#171c1f",
+          "name": "On Surface"
+        },
+        {
+          "slug": "onSurfaceFixed",
+          "color": "#171c1fff",
+          "name": "On Surface Fixed"
+        },
+        {
+          "slug": "surfaceVariant",
+          "color": "#dce4e9",
+          "name": "Surface Variant"
+        },
+        {
+          "slug": "onSurfaceVariant",
+          "color": "#40484c",
+          "name": "On Surface Variant"
+        },
+        {
+          "slug": "outline",
+          "color": "#70787d",
+          "name": "Outline"
+        },
+        {
+          "slug": "outlineVariant",
+          "color": "#C0C8CD",
+          "name": "Outline Variant"
+        },
+        {
+          "slug": "inverseSurface",
+          "color": "#2E3132",
+          "name": "Inverse Surface"
+        },
+        {
+          "slug": "inverseOnSurface",
+          "color": "#EFEEEF",
+          "name": "Inverse On Surface"
+        },
+        {
+          "slug": "inversePrimary",
+          "color": "#64D3FF",
+          "name": "Inverse Primary"
+        },
+        {
+          "slug": "surfaceDisabled",
+          "color": "#191C1E12",
+          "name": "Surface Disabled"
+        },
+        {
+          "slug": "onSurfaceDisabled",
+          "color": "#191C1E38",
+          "name": "On Surface Disabled"
+        },
+        {
+          "slug": "backdrop",
+          "color": "#2A323540",
+          "name": "Backdrop"
         }
       ]
     },
     "custom": {
-      "blockGap": "1.5rem"
+      "blockGap": "0rem"
     },
     "layout": {
-      "contentSize": "650px",
-      "wideSize": "1200px"
+      "contentSize": "64rem",
+      "wideSize": "78rem"
+
+
     },
     "spacing": {
       "spacingSizes": [
@@ -78,6 +230,10 @@
         }
       ]
     },
+    "border":{
+      "radius": true
+    },
+
     "typography": {
       "customFontSize": false,
       "dropCap": false,
@@ -86,41 +242,26 @@
         {
           "fontFace": [
             {
-              "fontFamily": "EBGaramond",
+              "fontFamily": "Inter",
               "fontStyle": "normal",
               "fontWeight": "400",
               "src": [
-                "file:./fonts/EBGaramond-Regular.ttf"
+                "file:./fonts/Inter-Regular.ttf"
               ]
             },
             {
-              "fontFamily": "EBGaramond",
+              "fontFamily": "Inter",
               "fontStyle": "normal",
               "fontWeight": "700",
               "src": [
-                "file:./fonts/EBGaramond-Bold.ttf"
+                "file:./fonts/Inter-Bold.ttf"
               ]
-            },
-			{
-			  "fontFamily": "EBGaramond",
-              "fontStyle": "italic",
-              "fontWeight": "400",
-              "src": [
-                "file:./fonts/EBGaramond-Italic.ttf"
-              ]
-            },
-			{
-              "fontFamily": "EBGaramond",
-              "fontStyle": "italic",
-              "fontWeight": "700",
-              "src": [
-                "file:./fonts/EBGaramond-BoldItalic.ttf"
-              ]
-			}
+            }
+
           ],
-          "fontFamily": "\"EBGaramond\", sans-serif",
-          "name": "EB Garamond",
-          "slug": "ebgaramond"
+          "fontFamily": "\"Inter\", sans-serif",
+          "name": "Inter",
+          "slug": "Inter"
         },
         {
           "fontFace": [
@@ -148,83 +289,75 @@
       ],
       "fontSizes": [
         {
-          "fluid": {
-            "min": "0.94rem",
-            "max": "1rem"
-          },
+          "fluid":false,
+          "size": "0.833rem",
+          "slug": "xs",
+          "name": "Extra Small"
+        },
+        {
+          "fluid":false,
           "size": "1rem",
           "slug": "sm",
           "name": "Small"
         },
         {
-          "fluid": {
-            "min": "1.13rem",
-            "max": "1.25rem"
-          },
-          "size": "1.25rem",
+          "fluid": false,
+          "size": "1.125rem",
           "slug": "paragraph",
           "name": "Paragraph"
         },
         {
           "fluid": {
-            "min": "1.35rem",
-            "max": "1.56rem"
+            "min": "1.25rem",
+            "max": "1.333rem"
           },
-          "size": "1.56rem",
+          "size": "1.333rem",
           "slug": "h6",
           "name": "H6"
         },
         {
           "fluid": {
-            "min": "1.62rem",
-            "max": "1.95rem"
+            "min": "1.563rem",
+            "max": "1.777rem"
           },
-          "size": "1.95rem",
+          "size": "1.777rem",
           "slug": "h5",
           "name": "H5"
         },
         {
           "fluid": {
-            "min": "1.94rem",
-            "max": "2.44rem"
+            "min": "1.953rem",
+            "max": "2.369rem"
           },
-          "size": "2.44rem",
+          "size": "2.369rem",
           "slug": "h4",
           "name": "H4"
         },
         {
           "fluid": {
-            "min": "2.33rem",
-            "max": "3.05rem"
+            "min": "2.441rem",
+            "max": "3.157rem"
           },
-          "size": "3.05rem",
+          "size": "3.157rem",
           "slug": "h3",
           "name": "H3"
         },
         {
           "fluid": {
-            "min": "2.8rem",
-            "max": "3.82rem"
+            "min": "3.052rem",
+            "max": "4.209rem"
           },
-          "size": "3.82rem",
+          "size": "4.209rem",
           "slug": "h2",
           "name": "H2"
         },
+
         {
           "fluid": {
-            "min": "3.36rem",
-            "max": "4.77rem"
+            "min": "3.815rem",
+            "max": "5.61rem"
           },
-          "size": "4.77rem",
-          "slug": "large",
-          "name": "Large"
-        },
-        {
-          "fluid": {
-            "min": "4.03rem",
-            "max": "5.96rem"
-          },
-          "size": "5.96rem",
+          "size": "5.61rem",
           "slug": "h1",
           "name": "H1"
         }
@@ -240,48 +373,9 @@
     "elements": {
       "button": {
         "border": {
-          "radius": "0px",
-          "color": "var:preset|color|background",
-          "width": "2px"
-        },
-        "spacing": {
-          "padding": {
-            "top": "var:preset|spacing|20",
-            "right": "var:preset|spacing|50",
-            "bottom": "var:preset|spacing|20",
-            "left": "var:preset|spacing|50"
-          }
-        },
-        "color": {
-          "background": "var:preset|color|primary",
-          "text": "var:preset|color|background"
-        },
-        ":hover": {
-          "color": {
-			"background": "var:preset|color|secondary",
-			"text": "var:preset|color|background"
-          }
-        },
-        ":focus": {
-          "color": {
-			"background": "var:preset|color|secondary",
-			"text": "var:preset|color|background"
-          },
-          "border": {
-            "color": "var:preset|color|background"
-          }
-        },
-        ":active": {
-          "color": {
-            "background": "var:preset|color|background",
-            "text": "var:preset|color|secondary"
-          }
-        },
-        ":visited": {
-          "color": {
-            "text": "var:preset|color|background"
-          }
+          "radius": "0.25rem"
         }
+
       },
       "h1": {
         "typography": {
@@ -315,7 +409,7 @@
       },
       "heading": {
         "typography": {
-          "fontFamily": "var:preset|font-family|ebgaramond",
+          "fontFamily": "var:preset|font-family|Inter",
           "fontWeight": "400",
           "lineHeight": "1.2"
         }
@@ -353,10 +447,10 @@
     "spacing": {
       "blockGap": "var:custom|block-gap",
       "padding": {
-        "top": "var:preset|spacing|30",
-        "right": "var:preset|spacing|20",
-        "bottom": "var:preset|spacing|30",
-        "left": "var:preset|spacing|20"
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0"
       }
     },
     "typography": {

@@ -50,7 +50,8 @@ const tailwindConfig = {
 	plugins: [require('@tailwindcss/forms')],
 };
 const colorConfig = {
-	primary: '#41C3F1',
+	primary: '#00A0E0',
+	secondary: '#e60c80',
 };
 const themeConfig = {
 	// scheme:"content",

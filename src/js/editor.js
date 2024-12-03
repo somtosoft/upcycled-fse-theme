@@ -18,12 +18,36 @@ import domReady from '@wordpress/dom-ready';
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-styles/
  */
 const registerBlockStyles = {
-	// "core/cover": [
-	// 	{
-	// 		name: "hero",
-	// 		label: "Hero",
-	// 	},
-	// ]
+"core/button": [
+        {
+            name: "primary",
+            label: "Primary",
+        },
+        {
+            name: "primary-container",
+            label: "Primary Container",
+        },
+        {
+            name: "secondary",
+            label: "Secondary",
+        },
+        {
+            name: "secondary-container",
+            label: "Secondary Container",
+        },
+		{
+			name:"secondary-outline",
+			label:"Secondary Outline"
+		},
+        {
+            name: "tertiary",
+            label: "Tertiary",
+        },
+        {
+            name: "tertiary-container",
+            label: "Tertiary Container",
+        }
+    ],
 };
 
 /**

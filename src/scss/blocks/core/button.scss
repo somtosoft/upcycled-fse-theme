@@ -33,12 +33,12 @@
 /* Secondary Button Style */
 .wp-block-button.is-style-secondary .wp-block-button__link {
     background-color: var(--wp--preset--color--secondary);
-    color: var(--wp--preset--color--onSecondary);
+    color: var(--wp--preset--color--on-secondary);
 
 	// /* Hover State */
 	&:hover {
 		background-color: var(--wp--preset--color--secondary-container);
-		color: var(--wp--preset--color--onSecondary-container);
+		color: var(--wp--preset--color--on-secondary-container);
 	}
 }
 // secondary outline Button Style
@@ -57,7 +57,7 @@
 /* Secondary Container Button Style */
 .wp-block-button.is-style-secondary-container .wp-block-button__link {
     background-color: var(--wp--preset--color--secondaryContainer);
-    color: var(--wp--preset--color--onSecondaryContainer);
+    color: var(--wp--preset--color--on-secondaryContainer);
 }
 
 /* Tertiary Button Style */

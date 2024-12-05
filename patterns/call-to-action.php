@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Call to Action
- * Slug: block-theme/call-to-action
+ * Slug: upcycled-fse/call-to-action
  * Description: A call to action block with a heading, paragraph, and button.
  * Viewport Width: 1024
  * Categories: featured

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Hidden Comments
- * Slug: block-theme/hidden-comments
+ * Slug: upcycled-fse/hidden-comments
  * Inserter: no
  */
 
@@ -11,7 +11,7 @@
 	<!-- wp:comments -->
 	<div class="wp-block-comments">
 		<!-- wp:heading {"level":2} -->
-		<h2><?php echo esc_html_x( 'Comments', 'Title of comments section', 'block-theme' ); ?></h2>
+		<h2><?php echo esc_html_x( 'Comments', 'Title of comments section', 'upcycled-fse' ); ?></h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:comments-title {"level":3} /-->

@@ -1,10 +1,10 @@
-# BlockTheme
+# Up-cycled Full Site Theme
 
-BlockTheme is a block-based starter theme built for modern WordPress developers.
+Up-cycled Full Site Theme is a block-based starter theme built for modern WordPress developers.
 
-A fork of [bacords block starter theme](https://github.com/bacoords/block-theme)
+A fork of [bacords block starter theme](https://github.com/somteacodes/upcycled-fse)
 
-Built by [@bacoords](https://github.com/bacoords).
+Built by [@somteacodes](https://github.com/somteacodes).
 
 ## Theme Setup
 
@@ -48,7 +48,7 @@ One note is that `@wordpress/scripts` is not great at recognizing _new_ files in
 
 ### CSS & SCSS
 
-BlockTheme does enqueue two global stylesheets, one for the frontend (`global.css`) and one for the block editor (`editor.css`).
+Up-cycled Full Site Theme does enqueue two global stylesheets, one for the frontend (`global.css`) and one for the block editor (`editor.css`).
 
 #### Utils/Mixins
 
@@ -69,7 +69,7 @@ An example:
 
 #### Block CSS
 
-BlockTheme's superpowers include the ability to generate _block-specific CSS files_ and enqueue them automatically to their specific blocks, meaning they're only loaded if the block is present on the page.
+Up-cycled Full Site Theme's superpowers include the ability to generate _block-specific CSS files_ and enqueue them automatically to their specific blocks, meaning they're only loaded if the block is present on the page.
 
 To add a block-specific stylesheet, create a new directory and file in the `src/scss/blocks` directory. The directory should match the block's namespace, and the file should be named after the block's slug. For example, a block like `core/paragraph` would get a corresponding SCSS file named `src/scss/blocks/core/paragraph.scss`, while a stylesheet for the Gravity Forms block would be named `src/scss/blocks/gravityforms/form.scss`.
 
@@ -91,7 +91,7 @@ You can do all sorts of block editor modifications in `editor.js`, including imp
 
 Because we're already using `@wordpress/scripts` to build our theme, we can also use it to build our custom blocks. 
 
-To scaffold a new custom block, run `npm run create-block [block-name]` from the root directory to create a new block in the `./src/blocks` directory. The block will be namespaced to the theme: `block-theme`. 
+To scaffold a new custom block, run `npm run create-block [block-name]` from the root directory to create a new block in the `./src/blocks` directory. The block will be namespaced to the theme: `upcycled-fse`. 
 
 For a dynamic block, run the command `npm run create-block:dynamic [block-name]`. You can also pass additional arguments to `@wordpress/create-block` using the extra `--` flag.
 
@@ -101,7 +101,7 @@ The `./blocks` directory contains all of compiled blocks, and new blocks that ap
 
 PHP linting is available by running `composer php-lint` from the command line.
 
-BlockTheme follows the WordPress Coding Standards. You can check your code against the standards by running `composer phpcs` from the command line. You can also run `composer phpcs-fix` to automatically fix any errors that can be fixed automatically.
+Up-cycled Full Site Theme follows the WordPress Coding Standards. You can check your code against the standards by running `composer phpcs` from the command line. You can also run `composer phpcs-fix` to automatically fix any errors that can be fixed automatically.
 
 The WordPress Prettier config is also included for JavaScript and SCSS files, but can be removed by deleting the `.prettierrc` file.
 
@@ -129,7 +129,7 @@ The WordPress Prettier config is also included for JavaScript and SCSS files, bu
 
 ## License
 
-BlockTheme is licensed under the GNU General Public License v3.0 or later.
+Up-cycled Full Site Theme is licensed under the GNU General Public License v3.0 or later.
 
 ## Credits
 

@@ -18,7 +18,7 @@ function global_theme_styles() {
 	$theme_version = wp_get_theme()->get( 'Version' );
 	$css_version   = $theme_version . '.' . filemtime( get_template_directory() . '/css/global.css' );
 
-	wp_enqueue_style( 'block-theme-global-theme-style', get_template_directory_uri() . '/css/global.css', array(), $css_version );
+	wp_enqueue_style( 'upcycled-fse-global-theme-style', get_template_directory_uri() . '/css/global.css', array(), $css_version );
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\global_theme_styles' );
 
@@ -34,7 +34,7 @@ function front_end_scripts() {
 	$asset_file   = include get_template_directory() . '/js/scripts.asset.php';
 	$dependencies = $asset_file['dependencies'];
 
-	wp_enqueue_script( 'block-theme-front-end-scripts', get_template_directory_uri() . '/js/scripts.js', $dependencies, $asset_file['version'], true );
+	wp_enqueue_script( 'upcycled-fse-front-end-scripts', get_template_directory_uri() . '/js/scripts.js', $dependencies, $asset_file['version'], true );
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\front_end_scripts' );
 
@@ -63,7 +63,7 @@ function enqueue_editor_modifications() {
 			break;
 	}
 
-	wp_enqueue_script( 'block-theme-editor-modifications', get_template_directory_uri() . '/js/editor.js', $dependencies, $asset_file['version'], true );
+	wp_enqueue_script( 'upcycled-fse-editor-modifications', get_template_directory_uri() . '/js/editor.js', $dependencies, $asset_file['version'], true );
 }
 
 add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_editor_modifications' );

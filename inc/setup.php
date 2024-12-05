@@ -14,10 +14,10 @@ function theme_setup() {
 	/**
 	* Make theme available for translation.
 	* Translations can be filed in the /languages/ directory.
-	* If you're building a theme based on 'block-theme', use a find and replace
-	* to change 'block-theme' to the name of your theme in all the template files.
+	* If you're building a theme based on 'upcycled-fse', use a find and replace
+	* to change 'upcycled-fse' to the name of your theme in all the template files.
 	*/
-	load_theme_textdomain( 'block-theme', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'upcycled-fse', get_template_directory() . '/languages' );
 
 	/**
 	 * Remove support for the core block pattern library.

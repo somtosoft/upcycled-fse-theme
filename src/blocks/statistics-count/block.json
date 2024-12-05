@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "block-theme/statistics-count",
+	"name": "upcycled-fse/statistics-count",
 	"version": "0.1.0",
 	"title": "Statistics Count",
 	"category": "widgets",

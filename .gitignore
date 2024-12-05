@@ -8,6 +8,9 @@ package-lock.json
 # Other system files
 .DS_Store
 
+#stub files
+# /stubs
+
 # Composer
 /vendor/
 composer.lock

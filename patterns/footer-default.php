@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Default Footer
- * Slug: block-theme/footer-default
+ * Slug: upcycled-fse/footer-default
  * Categories: footer
  * Block Types: core/template-part/footer
  */
@@ -17,8 +17,8 @@
 		<?php
 		printf(
 			/* Translators: WordPress link. */
-			esc_html__( 'Proudly powered by %s', 'block-theme' ),
-			'<a href="' . esc_url( __( 'https://wordpress.org', 'block-theme' ) ) . '" rel="nofollow">WordPress</a>'
+			esc_html__( 'Proudly powered by %s', 'upcycled-fse' ),
+			'<a href="' . esc_url( __( 'https://wordpress.org', 'upcycled-fse' ) ) . '" rel="nofollow">WordPress</a>'
 		)
 		?>
 		</p>

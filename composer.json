@@ -1,5 +1,5 @@
 {
-	"name": "bacoords/block-theme",
+	"name": "somteacodes/upcycled-fse",
 	"description": "A starter theme for modern WordPress developers.",
 	"type": "wordpress-theme",
 	"license": "GPL-3.0",
@@ -8,11 +8,11 @@
 		"wordpress",
 		"theme"
 	],
-	"homepage": "https://github.com/bacoords/block-theme",
+	"homepage": "https://github.com/somteacodes/upcycled-fse",
 	"authors": [
 		{
 			"name": "Contributors",
-			"homepage": "https://github.com/bacoords/block-theme/graphs/contributors"
+			"homepage": "https://github.com/somteacodes/upcycled-fse/graphs/contributors"
 		}
 	],
 	"require-dev": {
@@ -41,7 +41,7 @@
 		"post-update-cmd": "@phpcs-config-set"
 	},
 	"support": {
-		"issues": "https://github.com/bacoords/block-theme/issues",
-		"source": "https://github.com/bacoords/block-theme"
+		"issues": "https://github.com/somteacodes/upcycled-fse/issues",
+		"source": "https://github.com/somteacodes/upcycled-fse"
 	}
 }

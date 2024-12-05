@@ -14,6 +14,7 @@ const tailwindConfig = {
 	],
 	theme: {
 		extend: {
+
 			fontSize: {
 				extraSmall: '0.833rem',
 				small: '1rem',

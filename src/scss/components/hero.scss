@@ -1,0 +1,20 @@
+
+.nk-awb-wrap-content{
+	@apply h-full w-full !important;
+}
+
+.hero__container{
+
+    @apply md:bg-gradient-to-b bg-gradient-to-b !important;
+    // @apply backdrop-blur-sm !important;
+    @apply from-primary-container via-primary-container via-65% md:via-50% to-transparent !important;
+}
+.wp-block-nk-awb{
+    padding: 0rem !important;
+}
+.nk-awb-wrap.nk-awb-rendered
+{
+	// reduce the width of the rendered block
+	@apply  flex !important;
+
+}

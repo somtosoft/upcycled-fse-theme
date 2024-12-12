@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "upcycled-fse/testimonials",
+	"version": "0.1.0",
+	"title": "Testimonials List",
+	"category": "widgets",
+	"icon": "list-view",
+	"description": "List of testimonials",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "testimonials",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php" 
+}

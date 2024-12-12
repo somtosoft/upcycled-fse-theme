@@ -1,2 +1,14 @@
 body {
 }
+
+div.newsdesk-section__container
+{
+
+	>ul.wp-block-post-template{
+		@apply flex   gap-4 !important;
+		li{
+			@apply bg-surface-variant rounded-lg p-4 space-y-4 w-full flex flex-col;
+		}
+	}
+
+}

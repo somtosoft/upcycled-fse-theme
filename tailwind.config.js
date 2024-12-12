@@ -18,7 +18,7 @@ const tailwindConfig = {
 			fontSize: {
 				extraSmall: '0.833rem',
 				small: '1rem',
-				paragraph: ['1.125rem', '1.8rem'],
+				paragraph: ['1.125rem', '2.0rem'],
 				h6: 'calc(1.25rem + 0.1vw)',
 				h5: 'calc(1.563rem + 0.1vw)',
 				h4: 'calc(1.953rem + 0.1vw)',

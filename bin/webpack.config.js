@@ -103,6 +103,7 @@ var config = {
 	// 	react: 'React',
 	// 	'react-dom': 'ReactDOM',
 	// },
+	 
 };
 
 // Return Configuration

@@ -26,14 +26,22 @@
 		"tailwindcss": "^3.4.15"
 	},
 	"scripts": {
+		"live-reload": "browser-sync start --proxy 'http://upcycled-website.dvl.to/' --files 'src/**/*' ",
 		"build": "wp-scripts build --config ./bin/webpack.config.js --webpack-src-dir=src/blocks",
 		"create-block": "cd ./src/blocks && npx @wordpress/create-block --namespace=upcycled-fse --no-plugin",
 		"create-block:dynamic": "cd ./src/blocks && npx @wordpress/create-block --namespace=upcycled-fse --no-plugin --variant=dynamic",
 		"start": "wp-scripts start --config ./bin/webpack.config.js --webpack-src-dir=src/blocks"
 	},
 	"dependencies": {
+		"@headlessui/react": "^2.2.0",
+		"@heroicons/react": "^2.2.0",
+		"@hookform/resolvers": "^3.9.1",
 		"@tailwindcss/forms": "^0.5.9",
 		"@wordpress/icons": "^10.11.0",
-		"tailwind-material-colors": "^3.2.2"
+		"browser-sync": "^3.0.3",
+		"clsx": "^2.1.1",
+		"react-hook-form": "^7.54.0",
+		"tailwind-material-colors": "^3.2.2",
+		"yup": "^1.5.0"
 	}
 }

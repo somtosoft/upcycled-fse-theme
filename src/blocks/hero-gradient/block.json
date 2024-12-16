@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "upcycled-fse/hero-gradient",
+	"version": "0.1.0",
+	"title": "Hero Gradient",
+	"category": "design",
+	"icon": "button",
+	"description": "Hero with theme colour gradient",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "hero-gradient",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

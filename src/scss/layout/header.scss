@@ -1,2 +1,33 @@
 .wp-site-blocks > header {
 }
+.wp-block-navigation__container {
+	padding: 1rem;
+}
+.desktop--navigation-menu {
+	@apply hidden md:flex;
+}
+.desktop--navigation-menu > ul {
+	@apply cursor-pointer;
+}
+.desktop--navigation-menu > ul > li {
+	@apply text-on-surface rounded-md hover:bg-primary hover:text-on-primary font-semibold px-4;
+	// padding:0.75rem 1.5rem  !important;
+	// margin: 0rem 0.25rem !important;
+	// hover
+	a {
+		@apply px-5 py-3;
+	}
+}
+.desktop--navigation-menu > li.current-menu-item {
+	@apply bg-primary text-on-primary;
+}
+.wp-block-navigation-submenu {
+	> li.wp-block-navigation-item {
+		@apply bg-primary-container text-on-primary-container text-nowrap rounded-md outline-none
+		hover:bg-primary hover:text-on-primary;
+
+		> a > span.wp-block-navigation-item__label {
+			@apply text-nowrap;
+		}
+	}
+}

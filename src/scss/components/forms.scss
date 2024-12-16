@@ -1,0 +1,50 @@
+form {
+	@apply w-full;
+	& > div.row {
+		@apply flex flex-col md:flex-row gap-3 w-full pb-3   !important;
+
+		div {
+			@apply w-full pb-3;
+		}
+
+		label {
+			@apply text-paragraph font-bold text-on-surface m-0 p-0;
+		}
+		p {
+			@apply flex flex-col space-y-2;
+		}
+	}
+}
+
+input.wpcf7-form-control {
+	@apply rounded w-full focus:ring-primary focus:outline-none focus:ring-1 focus:border-primary;
+	min-width: 0;
+}
+
+textarea.wpcf7-textarea {
+	@apply rounded w-full focus:ring-primary focus:outline-none focus:ring-1 focus:border-primary
+	bg-surface-variant text-on-surface placeholder:text-on-surface !important;
+	min-width: 0;
+}
+
+input[type="text"],input[type="email"], input[type="tel"]  {
+	@apply bg-surface-variant text-on-surface placeholder:text-on-surface !important;
+}
+ 
+
+
+input[type="submit"].wpcf7-submit {
+	@apply rounded-lg interactive-bg-primary !important;
+}
+
+.wpcf7-not-valid-tip {
+	@apply text-error text-small !important;
+}
+
+.wpcf7-response-output {
+	@apply text-on-surface text-small border-primary rounded !important;
+}
+
+.wpcf7-spinner{
+	@apply flex self-center;
+}

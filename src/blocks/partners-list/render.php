@@ -4,7 +4,7 @@
  * @see https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/block-api/block-metadata.md#render
  */
 ?>
-<div class="flex  items-center justify-center gap-4 w-full">
+<div class="flex  items-center justify-center gap-6 w-full flex-wrap ">
 	<?php
 	$args =
 		array(

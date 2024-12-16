@@ -457,7 +457,7 @@
     "typography": {
       "fontFamily": "var:preset|font-family|inter",
       "fontSize": "var:preset|font-size|paragraph",
-      "lineHeight": "1.6"
+      "lineHeight": "2.0"
     }
   },
   "templateParts": [

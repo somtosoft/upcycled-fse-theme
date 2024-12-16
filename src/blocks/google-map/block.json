@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "upcycled-fse/google-map",
+	"version": "0.1.0",
+	"title": "Google Map",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"attributes": {
+		"embedSource": {
+			"type": "string",
+			"default": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2418.2949076204545!2d-2.0311713999999994!3d52.6907693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a75638776ed21%3A0x6b57fdb9d8b99e4!2sCannock%20bus%20station!5e0!3m2!1sen!2suk!4v1734153983581!5m2!1sen!2suk"
+		},
+
+		"height": {
+			"type": "string",
+			"default": "450"
+		},
+		"width": {
+			"type": "string",
+			"default": "100%"
+		},
+		"title": {
+			"type": "string",
+			"default":"Directions to our office"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "google-map",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

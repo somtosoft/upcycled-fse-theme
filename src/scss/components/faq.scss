@@ -1,0 +1,47 @@
+.wpseopress-faqs{
+@apply w-full;
+}
+.wpseopress-faq{
+    @apply w-full py-4 border-b border-t border-on-surface;
+}
+.wpseopress-faq-answer-desc{
+    @apply py-4 text-on-surface;
+}
+.wpseopress-faq-answer-image{
+    @apply py-2;
+    & img{
+        @apply h-44 object-contain rounded;
+    }
+}
+.wpseopress-accordion-button{
+     @apply  flex ;
+    & h6{
+        @apply text-left text-on-surface font-bold;
+    }
+    &[aria-expanded="false"] h6::after {
+       background-color: currentColor;
+       content: '';
+        mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>');
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        margin-left: 0.5em;
+        transform: rotate(0deg);
+        transition: transform 0.3s;
+    }
+
+    &[aria-expanded="true"] h6::after {
+        background-color: currentColor;
+        content:'';
+        mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        margin-left: 0.5em;
+
+
+        transform: rotate(0deg);
+        transition: transform 0.3s;
+
+    }
+}

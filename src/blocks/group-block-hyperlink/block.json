@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "upcycled-fse/group-block-hyperlink",
+	"version": "0.1.0",
+	"title": "Group Block Hyperlink",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"attributes": {
+		"url": {
+			"type": "string",
+			"default": "#"
+		},
+		"linkTarget": {
+			"type": "string",
+			"default": "_self"
+		},
+		"rel": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string"
+		},
+		"ariaLabel": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "group-block-hyperlink",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
+

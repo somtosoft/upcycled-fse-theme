@@ -4,7 +4,7 @@ import {
 	Dialog,
 	DialogPanel,
 	DialogTitle,
-	DialogBackdrop, 
+	DialogBackdrop,
 } from '@headlessui/react';
 const SexModal = ({isSexInfoOpen, closeSexModal}) => {
   return (
@@ -75,7 +75,7 @@ const SexModal = ({isSexInfoOpen, closeSexModal}) => {
 							</ol>
 							<div className="mt-6">
 								<Button
-									className="inline-flex items-center gap-2 rounded-md bg-secondary py-2 px-4 text-small font-semibold text-on-secondary shadow-inner shadow-surface/10 focus:outline-none data-[hover]:bg-secondary/80 data-[focus]:outline-1 data-[focus]:outline-surface data-[open]:bg-secondary"
+									className="inline-flex items-center gap-2 rounded-full bg-primary py-3 px-6 text-paragraph font-semibold text-on-secondary shadow-inner shadow-surface/10 focus:outline-none data-[hover]:bg-secondary/80 data-[focus]:outline-1 data-[focus]:outline-surface data-[open]:bg-secondary"
 									onClick={() => closeSexModal()}
 								>
 									Got it, thanks!

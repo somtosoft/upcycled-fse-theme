@@ -168,8 +168,7 @@ const RequestForm = () => {
 		handleSubmit,
 		formState: { errors, isDirty },
 	} = useForm({
-		mode: 'onBlur',
-		resolver: yupResolver(stepSchemas[currentStep]),
+
 	});
 
 	const goToStep = async (step) => {

@@ -29,6 +29,7 @@ export const FormProvider = ({ children }) => {
 		setFormData({});
 		localStorage.removeItem('formData');
 		localStorage.removeItem('currentStep');
+		localStorage.removeItem('currentForm');
 	};
 
 

@@ -27,11 +27,11 @@ textarea.wpcf7-textarea {
 	min-width: 0;
 }
 
-input[type="text"],input[type="email"], input[type="tel"]  {
-	@apply bg-surface-variant text-on-surface placeholder:text-on-surface !important;
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+	@apply disabled:bg-surface-variant disabled:text-on-surface/50;
 }
- 
-
 
 input[type="submit"].wpcf7-submit {
 	@apply rounded-lg interactive-bg-primary !important;
@@ -45,6 +45,6 @@ input[type="submit"].wpcf7-submit {
 	@apply text-on-surface text-small border-primary rounded !important;
 }
 
-.wpcf7-spinner{
+.wpcf7-spinner {
 	@apply flex self-center;
 }

@@ -1,12 +1,7 @@
 import { useState } from '@wordpress/element';
 import { useFormContext } from '../FormContext';
 import {
-	Switch,
-	Field,
-	Label,
-	Radio,
-	RadioGroup,
-	Description,
+
 	Combobox,
 	ComboboxInput,
 	ComboboxOption,
@@ -16,19 +11,11 @@ import { useForm, Controller, set } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import clsx from 'clsx';
-import SexModal from '../modals/sexModal';
-import {
-	InformationCircleIcon,
-	ChevronDownIcon,
-	CheckCircleIcon,
-	ChevronRightIcon,
-} from '@heroicons/react/20/solid';
+import { FORMSTEPS } from '../constants';
+
 import FormControls from './FormControls';
 
-const sexAtBirthOptions = [
-	{ id: 1, value: 'female', label: 'Female' },
-	{ id: 2, value: 'male', label: 'Male' },
-];
+
 
 const organisations = [
 	{ id: 1, value: 'nhs', label: 'NHS' },
@@ -41,8 +28,8 @@ const relationships = [
 	{ id: 2, value: 'relative', label: 'Relative' },
 	{ id: 3, value: 'support worker', label: 'Support Worker' },
 ];
-const Form1 = ({ nextStep, prevStep }) => {
-	const [isSexInfoOpen, setIsSexInfoOpen] = useState(false);
+const BioDataForm = ({ goToForm }) => {
+
 	const { updateFormData, formData } = useFormContext();
 	const [thirdParty, setThirdParty] = useState(formData.thirdParty || false);
 	const [professionalRelationship, setProfessionalRelationship] = useState(
@@ -95,16 +82,7 @@ const Form1 = ({ nextStep, prevStep }) => {
 		postcode: yup
 			.string()
 			.required(`Please provide ${thirdParty ? 'a' : 'your'} postcode`),
-		sexAtBirth: yup
-			.string()
-			.required(
-				`Please provide ${thirdParty ? 'a' : 'your'} sex at birth`
-			),
-		dob: yup
-			.string()
-			.required(
-				`Please provide ${thirdParty ? 'a' : 'your'} date of birth`
-			),
+
 		thirdParty: yup.boolean(),
 		professionalRelationship: yup.boolean(),
 		thirdPartyFirstName: yup.string().when('thirdParty', {
@@ -158,8 +136,9 @@ const Form1 = ({ nextStep, prevStep }) => {
 		if (isValid) {
 			console.log(data);
 			updateFormData(data);
-			nextStep();
+			goToForm(FORMSTEPS.bicycleInformation);
 		}
+
 	};
 	console.log(watch());
 	return (
@@ -238,8 +217,9 @@ const Form1 = ({ nextStep, prevStep }) => {
 									type="email"
 									className={clsx(
 										'mt-3 block w-full rounded-lg border-none bg-primary-container py-2 px-4 text-small text-on-surface',
-										'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-on-surface/70'
+										'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-on-surface/70 '
 									)}
+									disabled={!thirdParty}
 								/>
 								<span className="text-extraSmall text-error mt-1">
 									{errors.email?.message}
@@ -255,93 +235,19 @@ const Form1 = ({ nextStep, prevStep }) => {
 								</label>
 								<input
 									{...register('phone')}
-									type="tel"
+									type="text"
 									className={clsx(
 										'mt-3 block w-full rounded-lg border-none bg-primary-container py-2 px-4 text-small text-on-surface',
-										'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-on-surface/70'
+										'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-on-surface/70 '
 									)}
+									disabled={!thirdParty}
 								/>
 								<span className="text-extraSmall text-error mt-1">
 									{errors.phone?.message}
 								</span>
 							</div>
 						</div>
-						{/* sex at birth */}
-						<div className="w-full">
-							<div className="  space-y-3">
-								<label className="text-paragraph font-medium flex gap-4">
-									Sex at Birth{' '}
-									<span className="text-error px-1">*</span>{' '}
-									<span
-										className="text-extraSmall italic flex gap-1 items-center cursor-pointer"
-										onClick={() => setIsSexInfoOpen(true)}
-									>
-										<InformationCircleIcon className="w-4 h-4" />
-										Why we ask this
-									</span>
-								</label>
 
-								<Controller
-									name="sexAtBirth"
-									control={control}
-									render={({
-										field: { onChange, value, onBlur },
-									}) => (
-										<RadioGroup
-											onChange={onChange}
-											onBlur={onBlur}
-										>
-											<div className="gap-2 flex">
-												{sexAtBirthOptions.map(
-													(option) => (
-														<Radio
-															key={option.value}
-															value={option.value}
-															className="group relative flex cursor-pointer rounded-lg bg-surface py-4 px-5 text-on-surface shadow-xs transition focus:outline-none data-[focus]:outline-1 data-[focus]:outline-primary data-[checked]:bg-primary data-[checked]:text-on-primary"
-														>
-															<div className="flex w-full items-center justify-between gap-2">
-																<div className="text-paragraph">
-																	<Label className="   ">
-																		{
-																			option.label
-																		}
-																	</Label>
-																	<div className="flex gap-2 text-white/50"></div>
-																</div>
-																<CheckCircleIcon className="size-6 fill-on-primary opacity-0 transition group-data-[checked]:opacity-100" />
-															</div>
-														</Radio>
-													)
-												)}
-											</div>
-										</RadioGroup>
-									)}
-								/>
-								<span className="text-extraSmall text-error mt-1">
-									{errors.sexAtBirth?.message}
-								</span>
-							</div>
-						</div>
-						{/* date of birth */}
-						<div className="w-full">
-							<div className="  space-y-3">
-								<label className="text-paragraph font-medium">
-									Date of Birth{' '}
-									<span className="text-error px-1">*</span>
-								</label>
-								<input
-									{...register('dob')}
-									type="date"
-									className={clsx(
-										'mt-3 block w-full rounded-lg border-none bg-primary-container py-2 px-4 text-small text-on-surface',
-										'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-on-surface/70'
-									)}
-								/>
-								<span className="text-extraSmall text-error mt-1">
-									{errors.dob?.message}
-								</span>
-							</div>
-						</div>
 						{/* street */}
 						<div className="w-full">
 							<div className="  space-y-3">
@@ -821,18 +727,12 @@ const Form1 = ({ nextStep, prevStep }) => {
 					</div>
 
 					{/* form control */}
-					<FormControls
-						prevStep={prevStep}
-						nextStep={handleSubmit(onSubmit)}
-					/>
+					<FormControls nextStep={handleSubmit(onSubmit)} />
 				</form>
 			</div>
-			<SexModal
-				isSexInfoOpen={isSexInfoOpen}
-				closeSexModal={() => setIsSexInfoOpen(false)}
-			/>
+
 		</>
 	);
 };
 
-export default Form1;
+export default BioDataForm;
